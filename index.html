@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+
+<head width=50%>
+  <meta charset="UTF-8">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+
+<body width=50%>
+<script src="assets/javascript/game.js"></script>
+ <img src="assets/images/hangman.png" ></h1>
+ <div id="theWord"><p class="Big">&nbsp;</p></div><br>
+ 
+<div id="wordLetters"><p class="Big">&nbsp;</p></div><hr>
+<div><p>Please enter a letter ... </p></div><br>
+
+<div><p id="good"> Good Letters: </p></div>
+<div id="wrongLetters">Letters you tried:</div>
+
+<div ><p id="triedLetters">&nbsp;</p></div>
+<img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangmanz"><br />
+
+             <!-- display blanks for number of letters in each word \
+                    created and array of blanks length of word
+                    if letter in array has been guesssed, display letter not blank -->
+
+      <!-- Prompt user to enter letter -->
+        <!--capture letter variable on event keyup-->
+            <!-- save letters attempted into array
+                check array- is this duplicate guess?
+                if not duplicate, compare letter to word array 
+                                  if letter is in word- diplay letter instead of blanks where letter is used (refresh word section)
+                                  up the success score 1
+                                  else
+                                  up the failure count 1 message "sorry"
+                if duplicate, message user he typed duplicate
+                increment count of guesses up one
+                -->
+
+
+      
+  <footer width=50%>
+    <div class="container">
+      Copyright &copy; 2017 Patty Cross
+    </div>
+  </footer>
+</body>
+
+</html>
